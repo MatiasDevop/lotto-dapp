@@ -10,13 +10,13 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.1.3",
-    "@thirdweb-dev/react": "^4.6.19",
-    "@thirdweb-dev/sdk": "^4.0.80",
+    "@thirdweb-dev/react": "^3.10.3",
+    "@thirdweb-dev/sdk": "^4.0.85",
     "ethers": "^5.7.2",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
-    "thirdweb": "^5.19.0"
+    "thirdweb": "^5.22.1"
   },
   "devDependencies": {
     "@types/node": "^20",
