@@ -2,12 +2,22 @@
 import Header from "@/components/Header";
 import Head from "next/head";
 import Image from "next/image";
-import { useAddress } from "@thirdweb-dev/react";
+import {
+  useContract,
+  useMetamask,
+  useDisconnect,
+  useContractMetadata,
+  useAddress,
+  useChainId,
+} from "@thirdweb-dev/react";
+import Login from "@/components/Login";
 
 export default function Home() {
   const address = useAddress();
+  const chainId = useChainId();
 
-  console.log("adddddd", address);
+  if (!address) return <Login />;
+  console.log("adddddd", address, chainId);
   return (
     <div className="bg-[#091B18] min-h-screen flex flex-col">
       <Head>
